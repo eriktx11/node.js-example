@@ -1,5 +1,6 @@
 {
   "name": "examples",
+  "javascript.suggestionActions.enabled": false,
   "version": "1.0.0",
   "description": "simple examples",
   "main": "index.js",
@@ -7,6 +8,20 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index"
   },
+  "dependencies": {
+    "rectangle": {
+      "version": "0.2.0",
+      "resolved": "https://registry.npmjs.org/rectangle/-/rectangle-0.2.0.tgz",
+      "integrity": "sha1-yhxWknzwRaahg+zCkSYOJ6Kucbw="
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eriktx11/node.js-example.git"
+  },
   "author": "eriktx",
-  "license": "ISC"
+  "license": "ISC",
+  "dependenlcies": {
+    "rectangle": "^0.2.0"
+  }
 }

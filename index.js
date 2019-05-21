@@ -1,19 +1,19 @@
-var rect = {
-
-    perimeter: (x,y)=>(2*(x+y)),
-    area: (x,y)=>(x*y)
-};
+var rect = require('./rectangle.js');
 
 function solveRect(l,b){
     console.log("Calculating Rectangule with l = " + l + b);
-    if(l<=0 || b<=0){
-        console.log("Area should be greater than 0");
-    }
-    else{
-        console.log("Area is " );
-        console.log("Perimeter is ");
-    }
+
+    rect (l,b, (err, rectangle) => {
+
+        if(err){
+            console.log("Error: ", err.message);
+        }
+        else{
+            console.log("The area is: "+rectangle.area());
+        }
+    });
+    console.log("Pringint after callback");
         
 }
 
-solveRect(2,4);
+solveRect(4,4);
